@@ -26,7 +26,7 @@ Here are some visual tutorials to guide you through the process:
 - [Calibration Tutorial](https://youtu.be/YO5r1BUESJ0) (credits to Pasquale Bottalico)
 - [Windows Installation Demonstration](https://youtu.be/OpmGi_E7O3w) (credits to Charlie Nudelman)
 - [Mac Installation Demonstration](https://youtu.be/EBol4b_OJT8) (credits to Charlie Nudelman)
-- [Guide for Mac Installation of App]
+- [Guide for Mac Installation of App](https://github.com/SpAA-LAB/Dosimetry-App/blob/main/Mac%20Installation%20steps%20for%20DIY%20Voice%20Acoustic%20Analysis.pdf)
 - [Software Demonstration](https://youtu.be/dcDRqRJ6uX0) (credits to Charlie Nudelman)
 
 ### Usage
