@@ -94,7 +94,8 @@ def doses(x, Fs, time, SPL, F0, gender, f0min, f0max, no_cal):
             T[i]=0.0158/(1+2.15*(F0[i]/120)**0.5)
 
             eta[i]=5.4/F0[i]
-        else:
+
+        elif gender == "female":
             Pth[i]=0.14+0.06*(F0[i]/190)**2
             Pl[i]=Pth[i]+10**((SPL[i]-72.48)/27.3)
 
@@ -102,6 +103,15 @@ def doses(x, Fs, time, SPL, F0, gender, f0min, f0max, no_cal):
             T[i]=0.01063/(1+1.69*(F0[i]/190)**0.5)
 
             eta[i]=1.4/F0[i]
+
+        else:
+            Pth[i]=((0.14+0.06*(F0[i]/120)**2)+(0.14+0.06*(F0[i]/190)**2))/2
+            Pl[i]=((Pth[i]+10**((SPL[i]-72.48)/27.3))+(Pth[i]+10**((SPL[i]-72.48)/27.3)))/2
+
+            A[i]=((time_step*0.016*((Pl[i]-Pth[i])/Pth[i])**0.5)+(time_step*0.010*((Pl[i]-Pth[i])/Pth[i])**0.5))/2
+            T[i]=((0.01063/(1+1.69*(F0[i]/190)**0.5))+(0.01063/(1+1.69*(F0[i]/190)**0.5)))/2
+
+            eta[i]=((5.4/F0[i])+(1.4/F0[i]))/2
         
         Dt_partial[i]= time_step
         De_partial[i]=eta[i]*(A[i]/T[i])**2*omega[i]**2*time_step/1000
@@ -123,7 +133,7 @@ def doses(x, Fs, time, SPL, F0, gender, f0min, f0max, no_cal):
     SPL_sd=np.std(SPL_partial, ddof=1)
     F0_sd=np.std(F0_partial, ddof=1)
 
-    if no_cal or gender == "other":
+    if no_cal:
         Dd = "--UNDEFINED--"
         De = "--UNDEFINED--"
         Dr = "--UNDEFINED--"

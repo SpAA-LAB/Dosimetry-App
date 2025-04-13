@@ -128,6 +128,12 @@ def analysis(cal_files, cal_levels, monitoring_file, gender, save_folder=""):
     vocal_doses = pd.DataFrame()
     vocal_doses.insert(0, "Doses", ['Dt', 'VLI', 'Dd', 'De', 'Dr', 'Dt_p', 'Dd_n', 'De_n', 'Dr_n', 'SPL_mean', 'F0_mean',  'SPL_sd', 'F0_sd', 'CPP'])
     vocal_doses.insert(1, "Values", doses(audio, Fs, time_SPL_F0, SPL, F0, gender, f0min, f0max, len(calibration_constants)==0))
+
+    print("#"*80)
+    print(len(calibration_constants)==0)
+    print("#"*80)
+
+
     vocal_doses.to_excel(os.path.join(save_folder, results_directory, "Doses.xlsx"), index=False)
 
     # Step 11: Creating the time array corresponding to the monitoring data, in minutes

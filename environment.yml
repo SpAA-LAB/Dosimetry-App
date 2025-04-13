@@ -1,0 +1,22 @@
+# environment.yml (revised for pip fallback)
+name: dosimetry-env  # Or keep your preferred name
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # --- Core Conda Packages ---
+  - python=3.9      # Or your preferred Python version
+  - pip             # Essential for installing pip packages
+  - numpy           # Foundational numerical library
+  - pandas          # Data structures
+  - matplotlib      # Plotting
+  - scipy           # Scientific computing (needed based on prior errors)
+  - tk              # For Tkinter GUI
+
+  # --- Pip Packages ---
+  # Packages listed here will be installed using pip *after* conda packages
+  - pip:
+    - soundfile     # Install soundfile via pip
+    - praat-parselmouth   # Install parselmouth via pip
+    - pyinstaller
+    - openpyxl

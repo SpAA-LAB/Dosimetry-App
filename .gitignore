@@ -1,0 +1,14 @@
+.DS_store
+
+## Build directory
+/build
+
+dosimetry_app.spec
+
+/dist/dosimetry_app.app
+/dist/dosimetry_app
+
+
+## test
+/test
+test.ipynb
