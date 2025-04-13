@@ -7,12 +7,14 @@ This Python-based application has been developed to facilitate the vocal analysi
 ### Installation
 
 To install the app:
-1. **Download the latest version for [Windows](https://github.com/YehyaS/Dosimetry-App/releases/download/v1.11/dosimetry_app.exe) or [MacOS](https://github.com/YehyaS/Dosimetry-App/releases/download/v1.11/dosimetry_app_mac.zip)**: The easiest and preferred method is to download the latest version directly.
+
+1. **Download the latest version for [Windows](https://github.com/YehyaS/Dosimetry-App/releases/download/v1.11/dosimetry_app.exe) or [MacOS](https://github.com/SpAA-LAB/Dosimetry-App/blob/main/dist/dosimetry_app.zip)**: The easiest and preferred method is to download the latest version directly.
 2. **For MacOS:** Open a terminal in the extracted folder and enter the following two commands:
+
 ```
 $ sudo chmod -R 755 dosimetry_app.app
 $ xattr -c dosimetry_app.app
-``` 
+```
 
 Alternatively, if you'd like to build the app yourself from the source code:
 
@@ -23,6 +25,7 @@ Alternatively, if you'd like to build the app yourself from the source code:
 ### Tutorials
 
 Here are some visual tutorials to guide you through the process:
+
 - [Calibration Tutorial](https://youtu.be/YO5r1BUESJ0) (credits to Pasquale Bottalico)
 - [Windows Installation Demonstration](https://youtu.be/OpmGi_E7O3w) (credits to Charlie Nudelman)
 - [Mac Installation Demonstration](https://youtu.be/EBol4b_OJT8) (credits to Charlie Nudelman)
@@ -36,7 +39,7 @@ Here are some visual tutorials to guide you through the process:
 3. **Add Monitoring File**: Upload the monitoring session's audio file.
 4. **Choose Save Folder**: Specify the folder where the analysis results will be saved.
 5. **Run Analysis**: Click "Submit" to begin the analysis. Processing time depends on file size. Once complete, a window will display the vocal dose table (defined in the [doses.py](./doses.py) file) along with seven additional plots.
-6. **Reset**: To start a new analysis, close the plot window and repeat the steps. To fully reset the app, click "Reset."  
+6. **Reset**: To start a new analysis, close the plot window and repeat the steps. To fully reset the app, click "Reset."
 
 ## Contact
 
