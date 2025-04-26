@@ -8,8 +8,9 @@ This Python-based application has been developed to facilitate the vocal analysi
 
 To install the app:
 
-1. **Download the latest version for [Windows](https://github.com/YehyaS/Dosimetry-App/releases/download/v1.11/dosimetry_app.exe) or [MacOS](https://raw.githubusercontent.com/SpAA-LAB/Dosimetry-App/main/dist/dosimetry_app.zip)**: The easiest and preferred method is to download the latest version directly.
+1. **Download the latest version for [Windows](https://github.com/SpAA-LAB/Dosimetry-App/releases/download/windows/dosimetry_app.exe) or [MacOS](https://raw.githubusercontent.com/SpAA-LAB/Dosimetry-App/main/dist/dosimetry_app.zip)**: The easiest and preferred method is to download the latest version directly.
 2. **For MacOS:** Open a terminal in the extracted folder and enter the following two commands:
+
 
 ```
 $ sudo chmod -R 755 dosimetry_app.app
