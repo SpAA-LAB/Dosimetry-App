@@ -44,7 +44,7 @@ Here are some visual tutorials to guide you through the process:
 
 ## Contact
 
-For issues, suggestions, or questions, feel free to reach out via email at yehyas2@illinois.edu.
+For issues, suggestions, or questions, feel free to reach out via email at pb81@illinois.edu.
 
 ## References
 
